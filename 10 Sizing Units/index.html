@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1 Pixel = 1/96th of an inch */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            /*root element*/
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            /*viewport width and height*/
+            margin: auto;
+
+            background-color: aquamarine;
+
+        }
+
+        .container {
+
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            /* font-size: 18px; */
+
+            background-color: aquamarine;
+
+        }
+
+        .container p {
+            /* font-size: 1.5em; 18px into 2em = 36 */
+            font-size: 2rem;
+            /*root element font size into rem*/
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            color: blue;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+            margin: 23px auto;
+        }
+
+        /* vmin = mobile: vmin = vw, pc: vmin = vh */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint veritatis voluptates libero quasi odio
+            ea,
+            beatae hic qui assumenda illo praesentium aperiam mollitia architecto. Accusantium quaerat, voluptate minus
+            laboriosam aliquid magni sequi ipsam, adipisci pariatur incidunt officia dignissimos vel qui necessitatibus
+            doloremque ratione, non nam? Rem consectetur excepturi fuga! Odio inventore debitis quia quisquam nesciunt?
+        </p>
+
+    </div>
+
+    <div class="mycont">
+        i am another container
+    </div>
+
+</body>
+
+</html>
